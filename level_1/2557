@@ -1,0 +1,8 @@
+public class Main {  //class Main 으로 맞춰야 함
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+
+	}
+
+}
