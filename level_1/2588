@@ -1,0 +1,22 @@
+//(세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
+(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
+
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        int a,b,ab3,ab4,ab5,ab6;
+        Scanner scan = new Scanner(System.in);
+        a = scan.nextInt();
+        b = scan.nextInt();
+        ab3 = a * (b%10);  // (3)위치에 들어갈 값 
+        ab4 = a * ((b%100)/10);   // (4)위치에 들어갈 값
+        ab5 = a * (b / 100);   // (5)위치에 들어갈 값
+        ab6 = a * b;   // (6)위치에 들어갈 값
+        System.out.println(ab3);
+        System.out.println(ab4);
+        System.out.println(ab5);
+        System.out.println(ab6);
+    
+    }
+}
